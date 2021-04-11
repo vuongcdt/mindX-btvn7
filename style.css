@@ -1,0 +1,101 @@
+.image {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.image--left {
+  width: 50%;
+  height: 600px;
+  position: relative;
+  /* background: url("hinhTrai.jpg"); */
+}
+.image--backgound img {
+  align-items: center;
+  width: 250px;
+  z-index: 1;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+.image--left__quotes img {
+  width: 50px;
+  position: fixed;
+  top: 10px;
+  left: 40px;
+  z-index: 2;
+}
+.image--left__text {
+  position: fixed;
+  top: 10px;
+  left: 40px;
+  margin: 20px 50px;
+  z-index: 2;
+}
+
+.image--text h2 {
+  z-index: 2;
+  margin: 0px 40px;
+  position: absolute;
+  top: 30%;
+}
+.image--text img {
+  width: 70px;
+  opacity: 10%;
+}
+.image--avatar {
+  z-index: 2;
+  position: absolute;
+  top: 60%;
+}
+.image--avatar img {
+  margin: 0 0 0 40px;
+  border-radius: 20px;
+  width: 40px;
+}
+.image--avatar h5 {
+  width: 100px;
+  margin: 0px 0px 0px 100px;
+  z-index: 2;
+  position: absolute;
+  top: 30%;
+}
+.image--right {
+  width: 50%;
+  height: 600px;
+  background: url("hinhPhai.jpg");
+  background-size: cover;
+  z-index: 2;
+}
+
+.toolbar {
+  background-color: rgb(80, 16, 148);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.toolbar--button {
+  width: 160px;
+  margin: 20px;
+  text-align: start;
+  padding: 8px 20px;
+  background-color: aliceblue;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3px;
+}
+.toolbar--share {
+  margin: 30px 100px;
+  color: aliceblue;
+  text-align: center;
+}
+.toolbar--countShare {
+  text-align: end;
+  margin: 30px;
+  color: aliceblue;
+}
+.toolbar--share i {
+  font-size: 24px;
+  margin-left: 10px;
+}
+.toolbar--countShare i {
+  margin-right: 10px;
+}
